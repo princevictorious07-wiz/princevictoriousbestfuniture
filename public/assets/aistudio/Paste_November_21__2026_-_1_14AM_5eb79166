@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prince Victorious Best Furnitures | Bespoke & Luxury Furniture in Wukari, Taraba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --surface: #ffffff;
+      --surface-alt: #f2ede4;
+      --primary: #3b2416;      /* Rich Mahogany */
+      --primary-light: #5c3a24;
+      --accent: #c58b38;       /* Warm Brass / Gold */
+      --accent-hover: #a87226;
+      --text: #221c18;
+      --text-muted: #665c54;
+      --border: #e5ddd0;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #1ebe5d;
+      --radius: 12px;
+      --shadow: 0 10px 30px rgba(59, 36, 22, 0.07);
+      --transition: all 0.28s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .brand-font {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Top Info Bar */
+    .top-bar {
+      background: var(--primary);
+      color: #f4ece1;
+      font-size: 0.85rem;
+      padding: 8px 0;
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .top-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Navigation */
+    header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.1;
+    }
+
+    .logo-sub {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      align-items: center;
+    }
+
+    nav a {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text);
+      transition: var(--transition);
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .quote-btn {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+
+    .quote-btn:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+    }
+
+    .badge {
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 99px;
+      font-weight: 700;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: var(--primary);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 72px 0 84px;
+      background: linear-gradient(135deg, #f6f1e9 0%, #ebe1d1 100%);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(197, 139, 56, 0.16);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      max-width: 560px;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      padding: 14px 26px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.96rem;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-accent {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-accent:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .hero-image-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 50px rgba(59, 36, 22, 0.18);
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+    }
+
+    .hero-floating-card {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      padding: 16px 20px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Trust Features */
+    .features-strip {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 36px 0;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--surface-alt);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .feature-item h4 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+      color: var(--primary);
+    }
+
+    .feature-item p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Shared */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 48px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+    }
+
+    /* Catalog & Filter */
+    .filter-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .filter-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+      color: var(--text);
+      transition: var(--transition);
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .search-box {
+      padding: 10px 16px;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      min-width: 240px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      background: var(--surface);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+      gap: 28px;
+    }
+
+    .product-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .product-img-wrap {
+      position: relative;
+      height: 230px;
+      overflow: hidden;
+      background: #eae4da;
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .product-card:hover .product-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .product-cat {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(59, 36, 22, 0.88);
+      color: #fff;
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .product-body {
+      padding: 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-title {
+      font-size: 1.18rem;
+      margin-bottom: 6px;
+    }
+
+    .product-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      flex-grow: 1;
+    }
+
+    .product-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .product-price {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .product-wood {
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .product-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .btn-sm {
+      padding: 10px 12px;
+      font-size: 0.83rem;
+      border-radius: 8px;
+    }
+
+    /* Custom Order Section */
+    .custom-section {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .custom-section h2, .custom-section h3 {
+      color: #fff;
+    }
+
+    .custom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .custom-list {
+      list-style: none;
+      margin: 24px 0;
+      display: grid;
+      gap: 14px;
+    }
+
+    .custom-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #eadfce;
+    }
+
+    .custom-form-card {
+      background: var(--surface);
+      color: var(--text);
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    .custom-form-card h3 {
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--primary);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.94rem;
+      background: #fcfbf9;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: #fff;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    /* About & Testimonials */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .stat-box {
+      background: var(--surface);
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .stat-box strong {
+      display: block;
+      font-size: 1.6rem;
+      color: var(--accent);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .testimonial-card {
+      background: var(--surface);
+      padding: 26px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .stars {
+      color: var(--accent);
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+
+    /* Contact & Location */
+    .contact-section {
+      background: var(--surface-alt);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 36px;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      padding: 32px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .info-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 22px;
+      align-items: flex-start;
+    }
+
+    .info-icon {
+      width: 46px;
+      height: 46px;
+      background: var(--surface-alt);
+      color: var(--primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      border: 0;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    /* Footer */
+    footer {
+      background: #1d120b;
+      color: #d6c9ba;
+      padding: 56px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 36px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-title {
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      margin-bottom: 14px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      font-size: 0.92rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 24px;
+      font-size: 0.85rem;
+      color: #9e8f80;
+    }
+
+    /* Quote Drawer / Modal */
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      display: none;
+      justify-content: flex-end;
+      z-index: 2000;
+    }
+
+    .drawer-backdrop.open {
+      display: flex;
+    }
+
+    .drawer {
+      width: 100%;
+      max-width: 420px;
+      background: var(--surface);
+      height: 100%;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-y: auto;
+    }
+
+    .drawer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    .quote-items {
+      flex-grow: 1;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .quote-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg);
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      gap: 10px;
+    }
+
+    .remove-item {
+      color: #c0392b;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--whatsapp);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 1500;
+      transition: var(--transition);
+    }
+
+    .whatsapp-float:hover {
+      background: var(--whatsapp-dark);
+      transform: translateY(-3px);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid, .custom-grid, .about-grid, .contact-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid var(--border);
+        gap: 16px;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero-image-card img {
+        height: 340px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .form-row, .product-actions {
+        grid-template-columns: 1fr;
+      }
+      .top-bar {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📍 Along Kasinala Road, Opp. Federal University, Wukari LGA, Exit Gate, Taraba State</span>
+      <span>📞 <a href="tel:08067711844">080-677-11844</a> | ✉️ <a href="mailto:princevictorious07@gmail.com">princevictorious07@gmail.com</a></span>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">
+        <span class="logo-title">Prince Victorious</span>
+        <span class="logo-sub">Best Furnitures</span>
+      </a>
+
+      <nav>
+        <ul id="navMenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#catalog">Showroom</a></li>
+          <li><a href="#custom">Custom Orders</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="quote-btn" id="openQuoteBtn" aria-label="Open Quote List">
+          🛋️ Quote List <span class="badge" id="quoteCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-tag">✨ Handcrafted Excellence in Wukari, Taraba State</span>
+        <h1>Timeless Furniture Built for Comfort, Class &amp; Durability</h1>
+        <p>
+          Welcome to <strong>Prince Victorious Best Furnitures</strong>. From royal living room sofas and executive office desks to custom wardrobes and student hostel beds, we craft solid wood pieces tailored to your taste.
+        </p>
+        <div class="hero-btns">
+          <a href="#catalog" class="btn btn-primary">Explore Showroom</a>
+          <a href="#custom" class="btn btn-accent">Request Custom Design</a>
+          <a href="tel:08067711844" class="btn btn-outline">Call 080-677-11844</a>
+        </div>
+      </div>
+
+      <div class="hero-image-card">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80" alt="Luxury Living Room Furniture by Prince Victorious Best Furnitures">
+        <div class="hero-floating-card">
+          <div>
+            <strong style="color: var(--primary); display: block;">100% Seasoned Hardwood</strong>
+            <span style="font-size: 0.84rem; color: var(--text-muted);">Delivered across Wukari &amp; Taraba State</span>
+          </div>
+          <a href="#catalog" class="btn btn-primary btn-sm">View Prices</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Propositions -->
+  <div class="features-strip">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🪵</div>
+        <div>
+          <h4>Solid Hardwood Craft</h4>
+          <p>Built with treated, termite-resistant timber for decades of strength.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">📐</div>
+        <div>
+          <h4>Custom Measurements</h4>
+          <p>Made to fit your exact room dimensions, fabric choice, and polish shade.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🚚</div>
+        <div>
+          <h4>Safe Delivery &amp; Setup</h4>
+          <p>Reliable doorstep delivery and installation in Wukari and nearby towns.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🎓</div>
+        <div>
+          <h4>Home, Office &amp; Student Friendly</h4>
+          <p>Luxury home sets, corporate offices, and durable student furnishings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Catalog Section -->
+  <section id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Furniture Showroom</h2>
+        <p>Browse our popular pieces below. Add items to your Quote List to inquire via WhatsApp or Email, or request custom colors and sizes.</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-btn active" data-category="all">All Furniture</button>
+          <button class="filter-btn" data-category="living">Living Room</button>
+          <button class="filter-btn" data-category="bedroom">Bedroom</button>
+          <button class="filter-btn" data-category="dining">Dining Sets</button>
+          <button class="filter-btn" data-category="office">Office &amp; Study</button>
+        </div>
+        <input type="text" id="searchInput" class="search-box" placeholder="Search sofa, bed, wardrobe, desk..." />
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Populated dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Furniture Order Section -->
+  <section class="custom-section" id="custom">
+    <div class="container custom-grid">
+      <div>
+        <span class="hero-tag" style="background: rgba(255,255,255,0.14); color: #fff;">Bespoke Carpentry &amp; Upholstery</span>
+        <h2>Have a Specific Design in Mind? We Build It From Scratch.</h2>
+        <p style="color: #e6dacb; margin-top: 14px;">
+          Whether you saw a modern sofa online, need fitted kitchen cabinets, or want durable beds and reading tables near Federal University Wukari, our master craftsmen bring your vision to life.
+        </p>
+        <ul class="custom-list">
+          <li>✔️ Choose your preferred fabric, leather, or wood finish</li>
+          <li>✔️ Free measurement &amp; consultation within Wukari</li>
+          <li>✔️ Transparent pricing with flexible milestone payments</li>
+          <li>✔️ Fast turnaround and neat finishing</li>
+        </ul>
+      </div>
+
+      <div class="custom-form-card">
+        <h3>Request a Custom Quote</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 18px;">Fill out your project details and send directly via WhatsApp or Email.</p>
+
+        <form id="customOrderForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="custName">Your Name *</label>
+              <input type="text" id="custName" class="form-control" placeholder="e.g. Mr. Emmanuel" required>
+            </div>
+            <div class="form-group">
+              <label for="custPhone">Phone Number *</label>
+              <input type="tel" id="custPhone" class="form-control" placeholder="e.g. 0803..." required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="custType">Furniture Category</label>
+              <select id="custType" class="form-control">
+                <option value="Living Room Sofa Set">Living Room Sofa Set</option>
+                <option value="Bed Frame & Wardrobe">Bed Frame &amp; Wardrobe</option>
+                <option value="Dining Table Set">Dining Table Set</option>
+                <option value="Office Desk & Chair">Office Desk &amp; Chair</option>
+                <option value="Kitchen Cabinets / Doors">Kitchen Cabinets / Doors</option>
+                <option value="Other Custom Woodwork">Other Custom Woodwork</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="custBudget">Estimated Budget (₦)</label>
+              <input type="text" id="custBudget" class="form-control" placeholder="e.g. ₦250,000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="custDetails">Dimensions, Color &amp; Design Details *</label>
+            <textarea id="custDetails" rows="3" class="form-control" placeholder="Describe the size, material, color, or delivery location..." required></textarea>
+          </div>
+
+          <div class="product-actions">
+            <button type="submit" class="btn btn-accent">Send via WhatsApp</button>
+            <button type="button" id="sendEmailQuoteBtn" class="btn btn-primary">Send via Email</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Reviews -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=900&q=80" alt="Craftsmanship at Prince Victorious Best Furnitures" style="border-radius: 16px; box-shadow: var(--shadow);">
+        </div>
+        <div>
+          <span class="hero-tag">About Our Workshop</span>
+          <h2>Craftsmanship You Can Trust at Prince Victorious Best Furnitures</h2>
+          <p style="color: var(--text-muted); margin: 16px 0;">
+            Conveniently located <strong>Along Kasinala Road, opposite Federal University, Wukari LGA, Exit Gate, Taraba State</strong>, Prince Victorious Best Furnitures is dedicated to combining Nigerian artisanal woodworking skill with modern interior aesthetics.
+          </p>
+          <p style="color: var(--text-muted);">
+            Every joint, cushion, and polish coat is inspected to ensure your home, office, or lodge stands out with lasting elegance.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat-box">
+              <strong>500+</strong>
+              <span style="font-size: 0.84rem; color: var(--text-muted);">Pieces Delivered</span>
+            </div>
+            <div class="stat-box">
+              <strong>100%</strong>
+              <span style="font-size: 0.84rem; color: var(--text-muted);">Seasoned Wood</span>
+            </div>
+            <div class="stat-box">
+              <strong>4.9★</strong>
+              <span style="font-size: 0.84rem; color: var(--text-muted);">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Customer Testimonials -->
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-size: 0.94rem; margin-bottom: 14px;">"Prince Victorious built my 7-seater living room sofa and TV console. The wood quality and neat upholstery exceeded my expectations."</p>
+          <strong>— Engr. Musa T., Wukari</strong>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-size: 0.94rem; margin-bottom: 14px;">"Very accessible right opposite FUW Exit Gate. They delivered a sturdy reading desk and wardrobe to my lodge right on schedule."</p>
+          <strong>— Chidinma O., FUW Student</strong>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p style="font-size: 0.94rem; margin-bottom: 14px;">"Professional finishing on our executive office tables and conference chairs. Highly recommended anywhere in Taraba State."</p>
+          <strong>— Pastor Danjuma K., Taraba</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Map Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Visit Our Showroom or Get in Touch</h2>
+        <p>Stop by our workshop to inspect wood samples and finished pieces in person, or call us directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3 style="margin-bottom: 20px;">Contact Information</h3>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div>
+              <strong>Showroom &amp; Workshop Address</strong>
+              <p style="color: var(--text-muted); font-size: 0.94rem;">
+                Along Kasinala Road, opposite Federal University, Wukari LGA, Exit Gate, Taraba State.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div>
+              <strong>Phone &amp; WhatsApp</strong>
+              <p style="color: var(--text-muted); font-size: 0.94rem;">
+                <a href="tel:08067711844" style="color: var(--primary); font-weight: 600;">080-677-11844</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div>
+              <strong>Email Address</strong>
+              <p style="color: var(--text-muted); font-size: 0.94rem;">
+                <a href="mailto:princevictorious07@gmail.com" style="color: var(--primary); font-weight: 600;">princevictorious07@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">🕒</div>
+            <div>
+              <strong>Opening Hours</strong>
+              <p style="color: var(--text-muted); font-size: 0.94rem;">
+                Monday – Saturday: 8:00 AM – 6:30 PM
+              </p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px;">
+            <a href="tel:08067711844" class="btn btn-primary">Call Now</a>
+            <a href="https://wa.me/2348067711844?text=Hello%20Prince%20Victorious%20Best%20Furnitures,%20I%20would%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener" class="btn btn-accent">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div>
+          <iframe
+            class="map-frame"
+            title="Location Map - Federal University Wukari, Taraba State"
+            src="https://www.google.com/maps?q=Federal+University+Wukari,+Taraba+State,+Nigeria&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Prince Victorious Best Furnitures</div>
+          <p style="font-size: 0.92rem; max-width: 360px;">
+            Crafting durable, elegant, and custom-made furniture for homes, offices, and institutions across Wukari and Taraba State.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#catalog">Furniture Catalog</a></li>
+            <li><a href="#custom">Custom Orders</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-title">Reach Us</div>
+          <ul class="footer-links">
+            <li>📍 Along Kasinala Road, Opp. Federal University, Wukari LGA, Exit Gate, Taraba State</li>
+            <li>📞 <a href="tel:08067711844">080-677-11844</a></li>
+            <li>✉️ <a href="mailto:princevictorious07@gmail.com">princevictorious07@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; <span id="currentYear"></span> Prince Victorious Best Furnitures. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Drawer Modal -->
+  <div class="drawer-backdrop" id="quoteDrawer">
+    <div class="drawer">
+      <div>
+        <div class="drawer-header">
+          <h3>Your Quote List</h3>
+          <button class="close-btn" id="closeQuoteBtn" aria-label="Close Quote List">&times;</button>
+        </div>
+        <div class="quote-items" id="quoteItemsContainer">
+          <p style="color: var(--text-muted); text-align: center; margin-top: 30px;">Your quote list is empty. Add furniture from the showroom to request prices or place an order.</p>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border); padding-top: 16px;">
+        <div style="display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 14px;">
+          <span>Estimated Total:</span>
+          <span id="quoteTotal">₦0</span>
+        </div>
+        <button id="checkoutWhatsappBtn" class="btn btn-accent" style="width: 100%; margin-bottom: 10px;">
+          Send Quote Request via WhatsApp
+        </button>
+        <button id="checkoutEmailBtn" class="btn btn-outline" style="width: 100%;">
+          Send Quote Request via Email
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="whatsapp-float" href="https://wa.me/2348067711844?text=Hello%20Prince%20Victorious%20Best%20Furnitures,%20I%20visited%20your%20website%20and%20want%20to%20inquire%20about%20furniture." target="_blank" rel="noopener">
+    💬 WhatsApp Us
+  </a>
+
+  <script>
+    // Business Contact Constants
+    const BUSINESS_WHATSAPP = "2348067711844";
+    const BUSINESS_EMAIL = "princevictorious07@gmail.com";
+
+    // Furniture Catalog Data
+    const products = [
+      {
+        id: 1,
+        name: "Royal 7-Seater Velvet Sofa Set",
+        category: "living",
+        categoryLabel: "Living Room",
+        price: 480000,
+        wood: "Mahogany Frame",
+        desc: "Plush high-density foam cushions wrapped in stain-resistant velvet with solid carved hardwood legs.",
+        image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: 2,
+        name: "King-Size Tufted Bed Frame",
+        category: "bedroom",
+        categoryLabel: "Bedroom",
+        price: 260000,
+        wood: "Seasoned Iroko",
+        desc: "6x6 luxury upholstered headboard bed with reinforced orthopedic slats and optional storage drawers.",
+        image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: 3,
+        name: "6-Seater Solid Wood Dining Set",
+        category: "dining",
+        categoryLabel: "Dining Sets",
+        price: 340000,
+        wood: "Teak & Mahogany",
+        desc: "Gloss-finished family dining table paired with 6 ergonomic padded dining chairs.",
+        image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: 4,
+        name: "Executive Office Desk & Credenza",
+        category: "office",
+        categoryLabel: "Office & Study",
+        price: 210000,
+        wood: "Laminated Hardwood",
+        desc: "Spacious 1.8m executive table with lockable drawers, cable grommets, and side cabinet.",
+        image: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: 5,
+        name: "3-Door Sliding Wardrobe with Mirror",
+        category: "bedroom",
+        categoryLabel: "Bedroom",
+        price: 295000,
+        wood: "Treated Marine & Hardwood",
+        desc: "Spacious interior compartments, hanging rails, shoe rack, and full-length dressing mirror.",
+        image: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: 6,
+        name: "Modern Floating TV Console & Shelf",
+        category: "living",
+        categoryLabel: "Living Room",
+        price: 135000,
+        wood: "Walnut Finish",
+        desc: "Sleek wall-mounted entertainment unit fits up to 75-inch TVs with hidden wire compartments.",
+        image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: 7,
+        name: "Student / Lodge Reading Desk & Chair",
+        category: "office",
+        categoryLabel: "Office & Study",
+        price: 65000,
+        wood: "Solid Hardwood",
+        desc: "Compact, heavy-duty study desk with bookshelf cubby—ideal for FUW students and home offices.",
+        image: "https://images.unsplash.com/photo-1519947486511-46149fa0a254?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: 8,
+        name: "4-Seater Marble-Top Center & Dining Set",
+        category: "dining",
+        categoryLabel: "Dining Sets",
+        price: 230000,
+        wood: "Hardwood Base",
+        desc: "Compact luxury 4-seater dining table suitable for modern apartments and cozy dining spaces.",
+        image: "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=800&q=80"
+      }
+    ];
+
+    let quoteList = [];
+    let currentCategory = "all";
+
+    const productsGrid = document.getElementById("productsGrid");
+    const searchInput = document.getElementById("searchInput");
+    const filterTabs = document.getElementById("filterTabs");
+    const quoteCount = document.getElementById("quoteCount");
+    const quoteDrawer = document.getElementById("quoteDrawer");
+    const quoteItemsContainer = document.getElementById("quoteItemsContainer");
+    const quoteTotal = document.getElementById("quoteTotal");
+
+    // Format Currency in Naira
+    function formatNaira(amount) {
+      return "₦" + amount.toLocaleString("en-NG");
+    }
+
+    // Render Product Cards
+    function renderProducts() {
+      const query = searchInput.value.toLowerCase().trim();
+      const filtered = products.filter(item => {
+        const matchesCat = currentCategory === "all" || item.category === currentCategory;
+        const matchesSearch = item.name.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query);
+        return matchesCat && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        productsGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 30px;">No furniture matched your search. Try another keyword or request a custom order below!</p>`;
+        return;
+      }
+
+      productsGrid.innerHTML = filtered.map(item => `
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <span class="product-cat">${item.categoryLabel}</span>
+            <img src="${item.image}" alt="${item.name}" loading="lazy">
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">${item.name}</h3>
+            <p class="product-desc">${item.desc}</p>
+            <div class="product-meta">
+              <span class="product-price">${formatNaira(item.price)}</span>
+              <span class="product-wood">${item.wood}</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn btn-primary btn-sm" onclick="addToQuote(${item.id})">+ Add to Quote</button>
+              <a class="btn btn-accent btn-sm" target="_blank" rel="noopener"
+                 href="https://wa.me/${BUSINESS_WHATSAPP}?text=${encodeURIComponent(`Hello Prince Victorious Best Furnitures, I am interested in ordering: ${item.name} (${formatNaira(item.price)}).`)}">
+                 Order Now
+              </a>
+            </div>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    // Category Filter Click
+    filterTabs.addEventListener("click", (e) => {
+      if (!e.target.classList.contains("filter-btn")) return;
+      document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+      e.target.classList.add("active");
+      currentCategory = e.target.dataset.category;
+      renderProducts();
+    });
+
+    // Live Search Input
+    searchInput.addEventListener("input", renderProducts);
+
+    // Add Item to Quote Drawer
+    function addToQuote(id) {
+      const product = products.find(p => p.id === id);
+      if (!product) return;
+      quoteList.push(product);
+      updateQuoteUI();
+      quoteDrawer.classList.add("open");
+    }
+
+    // Remove Item from Quote Drawer
+    function removeFromQuote(index) {
+      quoteList.splice(index, 1);
+      updateQuoteUI();
+    }
+
+    // Update Quote Drawer UI
+    function updateQuoteUI() {
+      quoteCount.textContent = quoteList.length;
+
+      if (quoteList.length === 0) {
+        quoteItemsContainer.innerHTML = `<p style="color: var(--text-muted); text-align: center; margin-top: 30px;">Your quote list is empty. Add furniture from the showroom to request prices or place an order.</p>`;
+        quoteTotal.textContent = "₦0";
+        return;
+      }
+
+      let total = 0;
+      quoteItemsContainer.innerHTML = quoteList.map((item, idx) => {
+        total += item.price;
+        return `
+          <div class="quote-item">
+            <div>
+              <strong style="display: block; font-size: 0.92rem;">${item.name}</strong>
+              <span style="font-size: 0.84rem; color: var(--accent); font-weight: 600;">${formatNaira(item.price)}</span>
+            </div>
+            <button class="remove-item" onclick="removeFromQuote(${idx})">Remove</button>
+          </div>
+        `;
+      }).join("");
+
+      quoteTotal.textContent = formatNaira(total);
+    }
+
+    // Drawer Open / Close
+    document.getElementById("openQuoteBtn").addEventListener("click", () => quoteDrawer.classList.add("open"));
+    document.getElementById("closeQuoteBtn").addEventListener("click", () => quoteDrawer.classList.remove("open"));
+    quoteDrawer.addEventListener("click", (e) => {
+      if (e.target === quoteDrawer) quoteDrawer.classList.remove("open");
+    });
+
+    // Checkout Quote via WhatsApp
+    document.getElementById("checkoutWhatsappBtn").addEventListener("click", () => {
+      if (quoteList.length === 0) return alert("Please add at least one item to your quote list first.");
+      const itemsText = quoteList.map((i, idx) => `${idx + 1}. ${i.name} - ${formatNaira(i.price)}`).join("\n");
+      const total = quoteList.reduce((sum, i) => sum + i.price, 0);
+      const message = `Hello Prince Victorious Best Furnitures,\n\nI would like a quote/order for the following items:\n${itemsText}\n\nEstimated Total: ${formatNaira(total)}\n\nPlease let me know availability and delivery details.`;
+      window.open(`https://wa.me/${BUSINESS_WHATSAPP}?text=${encodeURIComponent(message)}`, "_blank");
+    });
+
+    // Checkout Quote via Email
+    document.getElementById("checkoutEmailBtn").addEventListener("click", () => {
+      if (quoteList.length === 0) return alert("Please add at least one item to your quote list first.");
+      const itemsText = quoteList.map((i, idx) => `${idx + 1}. ${i.name} - ${formatNaira(i.price)}`).join("\n");
+      const total = quoteList.reduce((sum, i) => sum + i.price, 0);
+      const subject = "Furniture Quote Request - Prince Victorious Best Furnitures";
+      const body = `Hello Prince Victorious Best Furnitures,\n\nI would like to request a quote for:\n${itemsText}\n\nEstimated Total: ${formatNaira(total)}\n\nThank you.`;
+      window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+
+    // Custom Order Form Submission (WhatsApp & Email)
+    function getCustomFormData() {
+      const name = document.getElementById("custName").value.trim();
+      const phone = document.getElementById("custPhone").value.trim();
+      const type = document.getElementById("custType").value;
+      const budget = document.getElementById("custBudget").value.trim() || "Not specified";
+      const details = document.getElementById("custDetails").value.trim();
+      return { name, phone, type, budget, details };
+    }
+
+    document.getElementById("customOrderForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const { name, phone, type, budget, details } = getCustomFormData();
+      const msg = `Hello Prince Victorious Best Furnitures,\n\n*Custom Furniture Request*\nName: ${name}\nPhone: ${phone}\nCategory: ${type}\nEstimated Budget: ${budget}\nDetails: ${details}`;
+      window.open(`https://wa.me/${BUSINESS_WHATSAPP}?text=${encodeURIComponent(msg)}`, "_blank");
+    });
+
+    document.getElementById("sendEmailQuoteBtn").addEventListener("click", () => {
+      const { name, phone, type, budget, details } = getCustomFormData();
+      if (!name || !phone || !details) {
+        alert("Please fill in your Name, Phone Number, and Design Details first.");
+        return;
+      }
+      const subject = `Custom Furniture Inquiry from ${name}`;
+      const body = `Hello Prince Victorious Best Furnitures,\n\nName: ${name}\nPhone: ${phone}\nCategory: ${type}\nEstimated Budget: ${budget}\nDetails: ${details}`;
+      window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+
+    // Mobile Menu Toggle
+    document.getElementById("menuToggle").addEventListener("click", () => {
+      document.getElementById("navMenu").classList.toggle("show");
+    });
+
+    // Set Current Year & Initial Render
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+    renderProducts();
+  </script>
+</body>
+</html>
